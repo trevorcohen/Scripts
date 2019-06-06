@@ -19,7 +19,7 @@ try:
                         if reg.search(line):
                                 port = reg.search(line).group(2)
                                 if int(port) > base:
-                                        print(port + ", " , end='')
+                                        print(port + "," , end='')
                                         base = int(port)
         print("")
 except IOError:
